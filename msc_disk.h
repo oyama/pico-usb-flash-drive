@@ -1,5 +1,5 @@
-#ifndef _MSC_DISK_H
-#define _MSC_DISK_H
+#ifndef _MSC_DISK_H_
+#define _MSC_DISK_H_
 
 #include <ctype.h>
 #include <bsp/board.h>

@@ -30,5 +30,5 @@ will not know about the update.
 
 ## Reference
 
-- FatFs http://elm-chan.org/fsw/ff/
 - pico-sdk https://github.com/raspberrypi/pico-sdk
+- FatFs http://elm-chan.org/fsw/ff/

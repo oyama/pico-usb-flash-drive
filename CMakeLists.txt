@@ -20,14 +20,15 @@ add_executable(picofs
   msc_disk.c
   usb_descriptors.c
   fatfs_flash_driver.c
-  lib/fatfs/source/ff.c
-  lib/fatfs/source/ffsystem.c
-  lib/fatfs/source/ffunicode.c
+  ${PICO_SDK_PATH}/lib/tinyusb/lib/fatfs/source/ff.c
+  ${PICO_SDK_PATH}/lib/tinyusb/lib/fatfs/source/ffsystem.c
+  ${PICO_SDK_PATH}/lib/tinyusb/lib/fatfs/source/ffunicode.c
 )
+
 target_include_directories(picofs
   PRIVATE
+  ${PICO_SDK_PATH}/lib/tinyusb/lib/fatfs/source
   ${CMAKE_CURRENT_LIST_DIR}
-  ${CMAKE_CURRENT_LIST_DIR}/lib/fatfs/source
 )
 target_link_libraries(picofs
   pico_stdlib
