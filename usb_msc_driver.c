@@ -1,4 +1,12 @@
-#include "msc_disk.h"
+#include <ctype.h>
+#include <bsp/board.h>
+#include <tusb.h>
+#include "flash.h"
+
+
+#define  DISK_BLOCK_NUM  128
+#define  DISK_BLOCK_SIZE 512
+
 
 // whether host does safe-eject
 static bool ejected = false;

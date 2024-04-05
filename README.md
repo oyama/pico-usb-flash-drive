@@ -18,6 +18,17 @@ make
 Now you have `picofs.uf2` and can drag and drop it onto your Raspberry Pi Pico to
 install and run it.
 
+## Files
+
+The main thing.
+
+- `flash.c`:          Read/write Pico onboard flash memory FAT12
+- `fatfs_driver.c`:   FatFs driver for Pico onboard flash memory
+- `usb_msc_driver.c`: USB Mass Storage Class driver to Pico onboard flash memory
+- `bootsel_button.h`: Onboard BOOTSEL button readout.
+- `lib`:              pico-sdk
+- `main.c`:           main
+
 ## Concurrent Access Issues
 
 FAT12 does not take concurrent access into account, so concurrent access, including
