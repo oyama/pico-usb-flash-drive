@@ -17,12 +17,12 @@ pico_sdk_init()
 add_executable(picofs
   main.c
   flash.c
-  msc_disk.c
-  usb_descriptors.c
-  fatfs_flash_driver.c
   ${PICO_SDK_PATH}/lib/tinyusb/lib/fatfs/source/ff.c
   ${PICO_SDK_PATH}/lib/tinyusb/lib/fatfs/source/ffsystem.c
   ${PICO_SDK_PATH}/lib/tinyusb/lib/fatfs/source/ffunicode.c
+  fatfs_driver.c
+  usb_msc_driver.c
+  usb_descriptors.c
 )
 
 target_include_directories(picofs
